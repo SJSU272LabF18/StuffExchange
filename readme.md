@@ -6,7 +6,7 @@
 
 Team Name: Endeavor (Project Team 22)
 
-## Project Idea 1 : Goods Swap
+## Project Idea 1 : Stuff Exchange
 
 Project description:
 Don't we all want to exchange stuff once we are done using it or are probably bored with it?
@@ -20,6 +20,7 @@ We offer the following services:
 4) Chat with the item owners and negotiate. Offer an item in exchange or let the item owner visit your profile and choose from the items.
 If both the parties agree, Voila!
 You now own something new and exciting that you can actually use!
+
 Note: As a part of this project, the website will not take care of the item shipping processes. In the future however, doorstep pickup and delivery can be added.
 
 
