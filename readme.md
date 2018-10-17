@@ -1,4 +1,4 @@
-#Student Names:
+# Student Names:
 1) Aditya Bhole
 2) Rajat Chaurasia
 3) Shivani Parate
@@ -6,7 +6,7 @@
 
 Team Name: Endeavor (Project Team 22)
 
-##Project Idea 1 : Goods Swap
+## Project Idea 1 : Goods Swap
 
 Project description:
 Don't we all want to exchange stuff once we are done using it or are probably bored with it?
@@ -23,7 +23,7 @@ You now own something new and exciting that you can actually use!
 Note: As a part of this project, the website will not take care of the item shipping processes. In the future however, doorstep pickup and delivery can be added.
 
 
-##Project Idea 2 : Stock Analysis and Prediction
+## Project Idea 2 : Stock Analysis and Prediction
 Project description:
 Long term investment is one of the major investment strategies. However, calculating intrinsic value of some company and evaluating shares for long term investment is not easy, since analysts have to consider a large number of financial indicators and evaluate them in a correct manner.
 So, in this project, we propose to explore the financial data with object oriented programming and additive models.
