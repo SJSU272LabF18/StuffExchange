@@ -6,6 +6,15 @@
 
 Team Name: Endeavor (Project Team 22)
 
+# None approved, here is what I am giving you 
+
+IAM using Blockchain - Enabling identity data sharing while preserving privacy ("consent control")
+Securing and sharing of identity data in KYC use cases. Blockchain has the potential to increase
+resilience, reliability, transparency and trust in a variety of common IAM functions that hinge on centralized record keeping: entitlement assignments; access requests/approvals; access
+certifications; the expansion of identity relationship management among people, devices,
+applications and data; and so on.
+
+
 ## Project Idea 1 : Stuff Exchange
 
 Project description:
