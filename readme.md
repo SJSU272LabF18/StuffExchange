@@ -7,7 +7,7 @@
 Team Name: Endeavor (Project Team 22)
 
 # Idea Approved
-## Project Idea 1 : Stuff Exchange
+## Project Idea: Stuff Exchange
 
 Project description:
 Don't we all want to exchange stuff once we are done using it or are probably bored with it?
