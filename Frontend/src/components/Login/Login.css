@@ -1,0 +1,146 @@
+.side-swag{
+    background-color:white;
+}
+
+.side-swag-logo{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 7%;
+    left: 7%;
+    background-image: url("https://projects.invisionapp.com/assets/apps/d/img/login-signup/invision-logo-white.png");
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    color: transparent;
+    font-size: 1px;
+}
+
+.side-swag-quotes{
+    webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    display:flex;
+    top: 0;
+    left: 0;
+    width: 460px;
+    min-height: 600px;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(36,40,56,.65);
+    background-image: url("https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a3fa46375259c39d07d0227e8ade6daa&auto=format&fit=crop&w=1868&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.side-swag-quotes::before{
+    ontent: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 480px;
+    background-image: linear-gradient(-1deg,#141516 7%,rgba(43,51,65,0) 100%);
+}
+.sign-up-quote{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0, 40px;
+    background-image: linear-gradient(-1deg,#141516 7%,rgba(43,51,65,0) 100%);
+    padding: 2em;
+}
+.quote-para{
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-style: italic;
+    color: #FFF;
+    line-height: 26px;
+    opacity: .8;
+    font-family: Montserrat, sans-serif;
+
+}
+
+.quote-name{
+    opacity: .8;
+    font-weight: 600;
+    font-size: 25px;
+    color: #FFF;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Karla,sans-serif;
+}
+
+.quote-desgnation{
+    opacity: .8;
+    font-weight: 600;
+    font-size: 25px;
+    color: #FFF;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sign-in-container{
+    margin-top: 10%;
+    padding: 2em;
+    color: #434C5F;
+}
+
+.sign-in-card{
+    border: none;
+}
+
+.scambio-login label{
+    font-family: Karla,sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.scambio-login input,a{
+    font-family: 'Montserrat', sans-serif;
+}
+.scambio-login input{
+    border: 1px solid #D4D9E2;
+}
+.scambio-login input:focus{
+    box-shadow: none;
+    border-color: #434C5F;
+}
+.scambio-login a{
+    text-decoration: none;
+    color: #8C96A9;
+}
+.scambio-login a:hover{
+    color: #434C5F;
+}
+.scambio-login .scambio-submit{
+    background-color: #F36;
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: white;
+    font-family: Montserrat,sans-serif;
+    font-weight: bold;
+    transition: all .2s ease;
+}
+.scambio-login .scambio-submit:hover{
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,.25);
+}
+
+.form-title{
+    margin-bottom: 15px;
+}
+.form-description{
+    margin-bottom: 30px;
+    color: #687b8e;
+}
