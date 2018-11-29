@@ -7,6 +7,7 @@ var cookieParser = require('cookie-parser');
 var cors = require('cors');
 app.set('view engine', 'ejs');
 
+
 //use cors to allow cross origin resource sharing
 app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 
@@ -69,13 +70,13 @@ app.get('/getjunks', function(req, res){
 
 //Scambio-end
 //Route to handle Post Request Call
-app.post('/login', function (req, res) {
+app.post('/user/login', function (req, res) {
 
 
     console.log("Inside Login Post Request");
     console.log("Req Body : ", req.body);
     Users.filter(function (user) {
-        if (user.username === req.body.username && user.password === req.body.password) {
+        if (user.username === req.body.EmailAddress && user.password === req.body.Password) {
             res.cookie('cookie', "admin", { maxAge: 900000, httpOnly: false, path: '/' });
             req.session.user = user;
             res.writeHead(200, {

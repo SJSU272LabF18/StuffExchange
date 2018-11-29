@@ -15,7 +15,9 @@ class Signup extends Component {
         this.state = {
             username: "",
             password: "",
-            fullname: "",
+            firstname: "",
+            lastname: "",
+            zip: "",
             authFlag: false,
             formErrors: { email: '', password: '' },
             emailValid: false,
@@ -25,7 +27,9 @@ class Signup extends Component {
         //Bind the handlers to this class
         this.usernameChangeHandler = this.usernameChangeHandler.bind(this);
         this.passwordChangeHandler = this.passwordChangeHandler.bind(this);
-        this.fullnameChangeHandler = this.fullnameChangeHandler.bind(this);
+        this.firstnameChangeHandler = this.firstnameChangeHandler.bind(this);
+        this.lastnameChangeHandler = this.lastnameChangeHandler.bind(this);
+        this.zipChangeHandler = this.zipChangeHandler.bind(this);
         this.submitLogin = this.submitLogin.bind(this);
     }
     //Call the Will Mount to set the auth Flag to false
@@ -47,9 +51,21 @@ class Signup extends Component {
         })
     }
 
-    fullnameChangeHandler = (e) => {
+    firstnameChangeHandler = (e) => {
         this.setState({
-            fullname: e.target.value
+            firstname: e.target.value
+        })
+    }
+
+    lastnameChangeHandler = (e) => {
+        this.setState({
+            lastname: e.target.value
+        })
+    }
+
+    zipChangeHandler = (e) => {
+        this.setState({
+            zip: e.target.value
         })
     }
     //submit Login handler to send a request to the node backend
@@ -120,17 +136,25 @@ class Signup extends Component {
                                     <div className="card-block">
                                         <form className="scambio-login">
                                             <div className="form-group">
-                                                <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" onChange={this.usernameChangeHandler} className="form-control" id="username" aria-describedby="emailHelp"  name="username" placeholder="Enter email" required></input>
+                                                <label for="firstname">First Name</label>
+                                                <input type="text" onChange={this.firstnameChangeHandler} className="form-control" id="firstname" aria-describedby="emailHelp"  name="firstname" placeholder="Jon/Jane" required></input>
                                             </div>
                                             <div className="form-group">
-                                                <label for="fullname">Name</label>
-                                                <input type="email" onChange={this.fullnameChangeHandler} className="form-control" id="fullname" aria-describedby="emailHelp"  name="fullname" placeholder="Jon/Jane Doe" required></input>
+                                                <label for="lastname">Last Name</label>
+                                                <input type="text" onChange={this.lastnameChangeHandler} className="form-control" id="lastname" aria-describedby="emailHelp"  name="lastname" placeholder="Doe" required></input>
+                                            </div>
+                                            <div className="form-group">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" onChange={this.usernameChangeHandler} className="form-control" id="username" aria-describedby="emailHelp"  name="username" placeholder="Enter email" required></input>
                                             </div>
                                             <div className="form-group">
                                                 <label for="exampleInputPassword1">Password</label>
                                                 <input type="password" onChange={this.passwordChangeHandler} className="form-control" id="password"  name="password" placeholder="Password" required></input>
                                                 <small id="emailHelp" className="form-text text-muted"><a href='#'>Forgot Password?</a></small>
+                                            </div>
+                                            <div className="form-group">
+                                                <label for="zipcode">Zip code</label>
+                                                <input type="email" onChange={this.zipChangeHandler} className="form-control" id="zipcode" aria-describedby="emailHelp"  name="zipcode" placeholder="Enter zip code" required></input>
                                             </div>
                                             <div className="form-group text-center">
                                                 <button onClick={this.submitLogin} type="submit" className="btn scambio-submit">SIGN IN</button>

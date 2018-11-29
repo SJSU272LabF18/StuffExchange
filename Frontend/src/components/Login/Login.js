@@ -50,13 +50,13 @@ class Login extends Component {
         //prevent page from refresh
         e.preventDefault();
         const data = {
-            username: this.state.username,
-            password: this.state.password
+            EmailAddress: this.state.username,
+            Password: this.state.password
         }
         //set the with credentials to true
         axios.defaults.withCredentials = true;
         //make a post request with the user data
-        axios.post('http://localhost:3001/login', data)
+        axios.post('http://localhost:3001/user/login', data)
             .then(response => {
                 console.log("Status Code : ", response.status);
                 if (response.status === 200) {
