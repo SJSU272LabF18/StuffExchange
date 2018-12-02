@@ -10,5 +10,15 @@ class HttpService {
         });
         return promise;
     }
+
+    getMatches = () => {
+        var promise = new Promise((resolve, reject) => {
+            fetch('http://localhost:3001/getmatches')
+            .then(response => {
+                resolve(response.json());
+            })
+        });
+        return promise;
+    }
 }
 export default HttpService;

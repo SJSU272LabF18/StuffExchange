@@ -57,7 +57,65 @@ var junks = [
     {  "JunkID":"8", "Title": "Sixth Junk", "Description": "Lorem Ipsum", "ImgUrl": "http://bobs.net/images/products/t-shirts/mens/badge/Bobs-Big-Boy-Badge-Shirt-Use.jpg", "condition": "fairly-used"  }
 ]
 
+var matches = [
+    {
+        "Name" : "one",
+        "ImageURL": "https://images-na.ssl-images-amazon.com/images/I/61IgIqKfWTL.jpg",
+        "MatchedWith":[
+            {
+                "Name" : "one",
+                "ImageURL": "https://images-na.ssl-images-amazon.com/images/I/61IgIqKfWTL.jpg",
+                "MatchedWith":[]
 
+            },
+            {
+                "Name" : "two",
+                "ImageURL": "http://bobs.net/images/products/t-shirts/mens/badge/Bobs-Big-Boy-Badge-Shirt-Use.jpg",
+                "MatchedWith":[]
+
+            },
+            {
+                "Name" : "three",
+                "ImageURL": "https://images-na.ssl-images-amazon.com/images/I/61IgIqKfWTL.jpg",
+                "MatchedWith":[]
+
+            }
+        ]
+
+    },
+    {
+        "Name" : "two",
+        "ImageURL": "http://bobs.net/images/products/t-shirts/mens/badge/Bobs-Big-Boy-Badge-Shirt-Use.jpg",
+        "MatchedWith":[
+            {
+                "Name" : "one",
+                "ImageURL": "https://images-na.ssl-images-amazon.com/images/I/61IgIqKfWTL.jpg",
+                "MatchedWith":[]
+
+            },
+            {
+                "Name" : "two",
+                "ImageURL": "https://images-na.ssl-images-amazon.com/images/I/61IgIqKfWTL.jpg",
+                "MatchedWith":[]
+
+            },
+            {
+                "Name" : "three",
+                "ImageURL": "https://images-na.ssl-images-amazon.com/images/I/61IgIqKfWTL.jpg",
+                "MatchedWith":[]
+
+            }
+        ]
+
+    },
+    {
+        "Name" : "three",
+        "ImageURL": "https://images-na.ssl-images-amazon.com/images/I/61IgIqKfWTL.jpg",
+        "MatchedWith":[
+        ]
+
+    }
+]
 
 //Scambio-start
 app.get('/getjunks', function(req, res){
@@ -66,6 +124,15 @@ app.get('/getjunks', function(req, res){
     });
     console.log("Junks : ", JSON.stringify(junks));
     res.end(JSON.stringify(junks));
+});
+
+
+app.get('/getmatches', function(req, res){
+    res.writeHead(200, {
+        'Content-Type': 'application/json'
+    });
+    console.log("Matches : ", JSON.stringify(matches));
+    res.end(JSON.stringify(matches));
 });
 
 //Scambio-end

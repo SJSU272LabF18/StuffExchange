@@ -1,0 +1,58 @@
+.match-group{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-bottom: 2em;
+    background-color: #ced4da52;
+    background-image: linear-gradient(120deg, rgb(132, 250, 176) 0%, rgb(143, 211, 244) 100%);
+}
+.my-item-div{
+    padding-bottom:1em;
+}
+.match-heading-div{
+    padding-top:1em;
+    border-bottom: 1px solid #ced4da;
+}
+.match-header{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #434C5F;
+}
+.myitem-card{
+    width: 10em;
+    max-height: 15em;
+    padding: 10px;
+    background-color: #434C5F;
+    border-radius: 0;
+    border: none;
+}
+
+.myitem-card .card-body{
+    padding: 2px;
+}
+.match-card{
+    border: none;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,.25);
+}
+.match-card > .card-body{
+    padding: 2px;
+    padding-left: 8px;
+
+}
+.match-card > .card-title{
+    color: green;
+}
+
+.match-row{
+    padding-top: 1em;
+}
+.myitem-title{
+    background-color:#434C5F;
+    color: white;
+    padding-top: 1em;
+}
+.myitem-title > h5{
+    color: white;
+    font-family: Montesserat,sans-serif;
+    font-weight: normal;
+}
