@@ -7,9 +7,10 @@
 .navbar-scambio{
     color: black;
     font-size: 1em;
-    padding-top: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     margin-bottom: 2em;
-    box-shadow: 0 8px 6px -6px #FF6F91;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,.25);
 }
 
 

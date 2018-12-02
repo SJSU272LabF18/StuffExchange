@@ -106,7 +106,7 @@ class Signup extends Component {
             <div>
                 {redirectVar}
                 <div className="row login_container">
-                    <div className="col-md-4 side-swag">
+                    <div className="col-md-4 signup-page side-swag">
                         <a href="#" className="side-swag-logo">Scambio</a>
                         <div className="side-swag-quotes">
                             <div className="sign-up-quote">
@@ -156,7 +156,7 @@ class Signup extends Component {
                                                 <label for="zipcode">Zip code</label>
                                                 <input type="email" onChange={this.zipChangeHandler} className="form-control" id="zipcode" aria-describedby="emailHelp"  name="zipcode" placeholder="Enter zip code" required></input>
                                             </div>
-                                            <div className="form-group text-center">
+                                            <div className="signup-submit form-group text-center">
                                                 <button onClick={this.submitLogin} type="submit" className="btn scambio-submit">SIGN IN</button>
                                             </div>
                                         </form>

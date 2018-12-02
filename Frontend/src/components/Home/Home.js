@@ -19,6 +19,7 @@ class Home extends Component {
         this.state = {
             books: [],
             junks: [],
+            pjunks: [],
             myjunks:[],
             options: [],
           selectedOption: null,
@@ -39,6 +40,7 @@ class Home extends Component {
         http.getJunks().then(data => {
             self.setState({junks: data})
             console.log(data);
+            self.setState({pjunks: data});
         },err => {
 
         });
@@ -67,17 +69,11 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:3001/home')
-            .then((response) => {
-                //update the state with the response data
-                this.setState({
-                    books: this.state.books.concat(response.data)
-                });
-            });
+        this.setState({pjunks: this.state.junks});
     }
 
     junkList = () => {
-        const list = this.state.junks.map((junk) =>
+        const list = this.state.pjunks.map((junk) =>
             <div key={junk.JunkID}>
                 <Junk JunkID={junk.JunkID} title={junk.Title} description={junk.Description} imgUrl={junk.ImgUrl} condition={junk.condition}/>
             </div>
@@ -111,6 +107,16 @@ class Home extends Component {
         }
     }
 
+
+    filterList = (e) => {
+        var updatedJunks = this.state.junks;
+        updatedJunks = updatedJunks.filter(function (item) {
+            return item.Title.toLowerCase().search(
+                e.target.value.toLowerCase()) !== -1;
+        });
+        this.setState({pjunks: updatedJunks});
+    }
+
     render() {
         let sidebar = null;
         if(cookie.load('cookie')){
@@ -130,10 +136,10 @@ class Home extends Component {
                                 <h5 className="card-title">You aren't logged in. Plese signin t0 continue</h5>
 
                                 <div class="card-footer toggle-card-footer">
-                                    <Link to="/login">Login</Link>
+                                    <Link to="/login">Log in</Link>
                                 </div>
                                 <div class="card-footer toggle-card-footer">
-                                    <Link to="/login">Login</Link>
+                                    <Link to="/signup">Sign Up</Link>
                                 </div>
                             </div>
                         </div>
@@ -161,6 +167,13 @@ class Home extends Component {
 
                 <div className="main-app-container row">
                     <div className="col-md-9 junk-yard-div">
+                        <div className="search-filter-div">
+                            <form>
+                                <fieldset className="form-group">
+                                    <input type="text" className="form-control form-control-lg search-bar" placeholder="Search" onChange={this.filterList}></input>
+                                </fieldset>
+                            </form>
+                        </div>
                         <div className="card-columns junk-card-deck">
                             {this.junkList()}
                         </div>
