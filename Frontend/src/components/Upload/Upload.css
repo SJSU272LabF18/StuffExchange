@@ -1,0 +1,16 @@
+.upload-container{
+    margin-top: 3%;
+    padding: 2em;
+    color: #434C5F;
+}
+
+.side-gif-card{
+    margin-top: 5em;
+    border: none;
+}
+.gif-caption{
+    font-size: 2em;
+}
+.upload-form-group input{
+    text-decoration: none;
+}

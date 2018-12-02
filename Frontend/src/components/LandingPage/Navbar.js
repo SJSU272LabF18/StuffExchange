@@ -22,7 +22,7 @@ class Navbar extends Component {
             navLogin = (
                 <ul class="navbar-nav nav-list">
                     <li class="nav-item nav-li">
-                        <Link to="/">Logout</Link>
+                        <Link to="/upload">Upload</Link>
                         <Link to="/matches">Matches</Link>
                     </li>
                     <li class="nav-item last-nav-btn">

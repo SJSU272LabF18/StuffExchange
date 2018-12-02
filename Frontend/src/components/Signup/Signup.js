@@ -30,7 +30,7 @@ class Signup extends Component {
         this.firstnameChangeHandler = this.firstnameChangeHandler.bind(this);
         this.lastnameChangeHandler = this.lastnameChangeHandler.bind(this);
         this.zipChangeHandler = this.zipChangeHandler.bind(this);
-        this.submitLogin = this.submitLogin.bind(this);
+        this.submitSignup = this.submitSignup.bind(this);
     }
     //Call the Will Mount to set the auth Flag to false
     componentWillMount() {
@@ -69,7 +69,7 @@ class Signup extends Component {
         })
     }
     //submit Login handler to send a request to the node backend
-    submitLogin = (e) => {
+    submitSignup = (e) => {
         var headers = new Headers();
         //prevent page from refresh
         e.preventDefault();
@@ -157,7 +157,7 @@ class Signup extends Component {
                                                 <input type="email" onChange={this.zipChangeHandler} className="form-control" id="zipcode" aria-describedby="emailHelp"  name="zipcode" placeholder="Enter zip code" required></input>
                                             </div>
                                             <div className="signup-submit form-group text-center">
-                                                <button onClick={this.submitLogin} type="submit" className="btn scambio-submit">SIGN IN</button>
+                                                <button onClick={this.submitSignup} type="submit" className="btn scambio-submit">SIGN IN</button>
                                             </div>
                                         </form>
                                     </div>
