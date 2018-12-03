@@ -8,6 +8,9 @@
 .junkyard-card{
     box-shadow: 0 3px 15px 0 rgba(0,0,0,.25);
 }
+.card-columns .card {
+    margin-bottom: 1.75rem;
+}
 .card-title{
     font-weight: bold;
     color: #434C5F;
@@ -212,6 +215,7 @@
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3;
+
     }
 }
 
